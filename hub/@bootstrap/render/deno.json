@@ -1,0 +1,20 @@
+{
+  "imports": {
+    "@/": "./",
+    "@bootstrap/render/": "./",
+    "lib:ctx": "../ctx.d.ts",
+    "@reframe/": "../../@reframe/"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:react@canary",
+    "jsxImportSourceTypes": "npm:@types/react@^19.x",
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "deno.ns",
+      "deno.unstable"
+    ]
+  }
+}

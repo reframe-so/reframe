@@ -1,0 +1,102 @@
+{
+  dynamicImports: [],
+  symbols: [
+    [
+      "o",
+      {
+        kind: "import",
+        name: "default",
+        specifier: "n",
+        attributes: {}
+      }
+    ],
+    [
+      "n",
+      { kind: "import", name: "n", specifier: "n", attributes: {} }
+    ],
+    [
+      "p",
+      { kind: "import", name: "*", specifier: "p", attributes: {} }
+    ],
+    [ "a", { kind: "local", block: 0 } ],
+    [ "h", { kind: "local", block: 0 } ],
+    [ "i", { kind: "local", block: 0 } ],
+    [ "j", { kind: "local", block: 0 } ],
+    [ "b", { kind: "local", block: 1 } ],
+    [ "k", { kind: "local", block: 1 } ],
+    [ "l", { kind: "local", block: 1 } ],
+    [ "c", { kind: "local", block: 2 } ],
+    [ "e", { kind: "local", block: 2 } ],
+    [ "x", { kind: "local", block: 2 } ],
+    [ "y", { kind: "local", block: 2 } ],
+    [ "z", { kind: "local", block: 2 } ],
+    [ "f", { kind: "local", block: 3 } ],
+    [ "g", { kind: "local", block: 4 } ],
+    [ "v", { kind: "local", block: 5 } ],
+    [ "w", { kind: "local", block: 6 } ],
+    [ "mm", { kind: "local", block: 7 } ]
+  ],
+  exports: [
+    [ "a", { kind: "local", symbol: "a" } ],
+    [ "b", { kind: "local", symbol: "a" } ],
+    [ "c", { kind: "local", symbol: "b" } ],
+    [ "d", { kind: "local", symbol: "c" } ],
+    [ "ii", { kind: "local", symbol: "h" } ],
+    [ "m", { kind: "local", symbol: "l" } ],
+    [ "n", { kind: "local", symbol: "n" } ],
+    [ "o", { kind: "local", symbol: "o" } ],
+    [ "p", { kind: "local", symbol: "p" } ],
+    [
+      "q",
+      {
+        kind: "import",
+        name: "default",
+        specifier: "r",
+        attributes: {}
+      }
+    ],
+    [
+      "r",
+      { kind: "import", name: "r", specifier: "r", attributes: {} }
+    ],
+    [
+      "t",
+      { kind: "import", name: "s", specifier: "r", attributes: {} }
+    ],
+    [
+      "s",
+      { kind: "import", name: "*", specifier: "s", attributes: {} }
+    ],
+    [ "ww", { kind: "local", symbol: "v" } ],
+    [ "xx", { kind: "local", symbol: "w" } ],
+    [ "default", { kind: "local", symbol: "u" } ],
+    [ "e", { kind: "local", symbol: "e" } ],
+    [ "f", { kind: "local", symbol: "f" } ],
+    [ "g", { kind: "local", symbol: "g" } ],
+    [ "i", { kind: "local", symbol: "i" } ],
+    [ "j", { kind: "local", symbol: "j" } ],
+    [ "w", { kind: "local", symbol: "w" } ],
+    [ "x", { kind: "local", symbol: "x" } ],
+    [ "z", { kind: "local", symbol: "z" } ]
+  ],
+  reexports: [
+    { specifier: "t", attributes: {} },
+    { specifier: "x", attributes: {} },
+    { specifier: "y", attributes: {} },
+    { specifier: "z", attributes: {} }
+  ],
+  blocks: [
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [ "w", "c" ], dynamic: [], target: "server" },
+    {
+      uses: [ "z", "y", "c", "e", "x" ],
+      dynamic: [],
+      target: "server"
+    },
+    { uses: [], dynamic: [], target: "server" }
+  ]
+}

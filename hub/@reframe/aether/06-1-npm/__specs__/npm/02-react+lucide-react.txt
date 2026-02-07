@@ -1,0 +1,54 @@
+{
+  dependencies: {
+    "lucide-react": {
+      specifier: "latest",
+      version: "0.503.0"
+    },
+    react: {
+      specifier: "canary",
+      version: "19.2.0-canary-72135096-20250421"
+    }
+  },
+  packages: {
+    "lucide-react": {
+      resolve: {
+        latest: "0.503.0"
+      },
+      versions: {
+        "0.503.0": {
+          color: 0,
+          deps: {},
+          peer: {
+            react: "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+          },
+          transitive: {
+            react: Set(1) {
+              "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+            }
+          }
+        }
+      }
+    },
+    react: {
+      resolve: {
+        "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0": "19.2.0-canary-72135096-20250421",
+        canary: "19.2.0-canary-72135096-20250421"
+      },
+      versions: {
+        "19.2.0-canary-72135096-20250421": {
+          color: 1,
+          deps: {}
+        }
+      }
+    }
+  },
+  snapshots: {
+    ".": {
+      "lucide-react": "0.503.0(react@19.2.0-canary-72135096-20250421)",
+      react: "19.2.0-canary-72135096-20250421"
+    },
+    "lucide-react@0.503.0(react@19.2.0-canary-72135096-20250421)": {},
+    "react@19.2.0-canary-72135096-20250421": {}
+  },
+  staging: {}
+}

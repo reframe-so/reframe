@@ -1,0 +1,1051 @@
+{
+  dependencies: {
+    "@livekit/agents": {
+      specifier: "^0.7.1x",
+      version: "0.7.3"
+    },
+    "@livekit/agents-plugin-elevenlabs": {
+      specifier: "latest",
+      version: "0.6.2"
+    },
+    "@livekit/rtc-node": {
+      specifier: "^0.13.4",
+      version: "0.13.11"
+    },
+    "utf-8-validate": {
+      specifier: ">=5.0.2",
+      version: "6.0.5"
+    },
+    bufferutil: {
+      specifier: "^4.0.1",
+      version: "4.0.9"
+    }
+  },
+  packages: {
+    "@bufbuild/protobuf": {
+      resolve: {
+        "^1.10.0": "1.10.1",
+        "^1.7.2": "1.10.1"
+      },
+      versions: {
+        "1.10.1": {
+          color: 43,
+          deps: {}
+        }
+      }
+    },
+    "@livekit/agents": {
+      resolve: {
+        "^0.7.1x": "0.7.3"
+      },
+      versions: {
+        "0.7.3": {
+          color: 2,
+          deps: {
+            "@livekit/mutex": "^1.1.1",
+            "@livekit/protocol": "^1.29.1",
+            "@livekit/typed-emitter": "^3.0.0",
+            "livekit-server-sdk": "^2.9.2",
+            "pino-pretty": "^11.0.0",
+            commander: "^12.0.0",
+            pino: "^8.19.0",
+            ws: "^8.16.0",
+            zod: "^3.23.8"
+          },
+          peer: {
+            "@livekit/rtc-node": "^0.13.11"
+          },
+          transitive: {
+            "@livekit/rtc-node": Set(1) {
+              "^0.13.11"
+            },
+            "utf-8-validate": Set(1) {
+              ">=5.0.2"
+            },
+            bufferutil: Set(1) {
+              "^4.0.1"
+            }
+          }
+        }
+      }
+    },
+    "@livekit/agents-plugin-elevenlabs": {
+      resolve: {
+        latest: "0.6.2"
+      },
+      versions: {
+        "0.6.2": {
+          color: 4,
+          deps: {
+            ws: "^8.16.0"
+          },
+          peer: {
+            "@livekit/agents": "^0.7.1x",
+            "@livekit/rtc-node": "^0.13.4"
+          },
+          transitive: {
+            "@livekit/agents": Set(1) {
+              "^0.7.1x"
+            },
+            "@livekit/rtc-node": Set(1) {
+              "^0.13.4"
+            },
+            "utf-8-validate": Set(1) {
+              ">=5.0.2"
+            },
+            bufferutil: Set(1) {
+              "^4.0.1"
+            }
+          }
+        }
+      }
+    },
+    "@livekit/mutex": {
+      resolve: {
+        "^1.0.0": "1.1.1",
+        "^1.1.1": "1.1.1"
+      },
+      versions: {
+        "1.1.1": {
+          color: 11,
+          deps: {}
+        }
+      }
+    },
+    "@livekit/protocol": {
+      resolve: {
+        "^1.29.1": "1.37.0",
+        "^1.36.1": "1.37.0"
+      },
+      versions: {
+        "1.37.0": {
+          color: 16,
+          deps: {
+            "@bufbuild/protobuf": "^1.10.0"
+          }
+        }
+      }
+    },
+    "@livekit/rtc-node": {
+      resolve: {
+        "^0.13.11": "0.13.11",
+        "^0.13.4": "0.13.11"
+      },
+      versions: {
+        "0.13.11": {
+          color: 3,
+          deps: {
+            "@bufbuild/protobuf": "^1.10.0",
+            "@livekit/mutex": "^1.0.0",
+            "@livekit/typed-emitter": "^3.0.0",
+            "pino-pretty": "^13.0.0",
+            pino: "^9.0.0"
+          }
+        }
+      }
+    },
+    "@livekit/typed-emitter": {
+      resolve: {
+        "^3.0.0": "3.0.0"
+      },
+      versions: {
+        "3.0.0": {
+          color: 12,
+          deps: {}
+        }
+      }
+    },
+    "abort-controller": {
+      resolve: {
+        "^3.0.0": "3.0.0"
+      },
+      versions: {
+        "3.0.0": {
+          color: 53,
+          deps: {
+            "event-target-shim": "^5.0.0"
+          }
+        }
+      }
+    },
+    "atomic-sleep": {
+      resolve: {
+        "^1.0.0": "1.0.0"
+      },
+      versions: {
+        "1.0.0": {
+          color: 52,
+          deps: {}
+        }
+      }
+    },
+    "base64-js": {
+      resolve: {
+        "^1.3.1": "1.5.1"
+      },
+      versions: {
+        "1.5.1": {
+          color: 60,
+          deps: {}
+        }
+      }
+    },
+    "camelcase-keys": {
+      resolve: {
+        "^9.0.0": "9.1.3"
+      },
+      versions: {
+        "9.1.3": {
+          color: 17,
+          deps: {
+            "map-obj": "5.0.0",
+            "quick-lru": "^6.1.1",
+            "type-fest": "^4.3.2",
+            camelcase: "^8.0.0"
+          }
+        }
+      }
+    },
+    "end-of-stream": {
+      resolve: {
+        "^1.1.0": "1.4.4"
+      },
+      versions: {
+        "1.4.4": {
+          color: 51,
+          deps: {
+            once: "^1.4.0"
+          }
+        }
+      }
+    },
+    "event-target-shim": {
+      resolve: {
+        "^5.0.0": "5.0.1"
+      },
+      versions: {
+        "5.0.1": {
+          color: 59,
+          deps: {}
+        }
+      }
+    },
+    "fast-copy": {
+      resolve: {
+        "^3.0.2": "3.0.2"
+      },
+      versions: {
+        "3.0.2": {
+          color: 32,
+          deps: {}
+        }
+      }
+    },
+    "fast-redact": {
+      resolve: {
+        "^3.1.1": "3.5.0"
+      },
+      versions: {
+        "3.5.0": {
+          color: 24,
+          deps: {}
+        }
+      }
+    },
+    "fast-safe-stringify": {
+      resolve: {
+        "^2.1.1": "2.1.1"
+      },
+      versions: {
+        "2.1.1": {
+          color: 33,
+          deps: {}
+        }
+      }
+    },
+    "help-me": {
+      resolve: {
+        "^5.0.0": "5.0.0"
+      },
+      versions: {
+        "5.0.0": {
+          color: 34,
+          deps: {}
+        }
+      }
+    },
+    "livekit-server-sdk": {
+      resolve: {
+        "^2.9.2": "2.12.0"
+      },
+      versions: {
+        "2.12.0": {
+          color: 7,
+          deps: {
+            "@bufbuild/protobuf": "^1.7.2",
+            "@livekit/protocol": "^1.36.1",
+            "camelcase-keys": "^9.0.0",
+            jose: "^5.1.2"
+          }
+        }
+      }
+    },
+    "map-obj": {
+      resolve: {
+        "5.0.0": "5.0.0"
+      },
+      versions: {
+        "5.0.0": {
+          color: 45,
+          deps: {}
+        }
+      }
+    },
+    "node-gyp-build": {
+      resolve: {
+        "^4.3.0": "4.8.4"
+      },
+      versions: {
+        "4.8.4": {
+          color: 5,
+          deps: {}
+        }
+      }
+    },
+    "on-exit-leak-free": {
+      resolve: {
+        "^2.1.0": "2.1.2"
+      },
+      versions: {
+        "2.1.2": {
+          color: 37,
+          deps: {}
+        }
+      }
+    },
+    "pino-abstract-transport": {
+      resolve: {
+        "^1.2.0": "1.2.0",
+        "^2.0.0": "2.0.0"
+      },
+      versions: {
+        "1.2.0": {
+          color: 19,
+          deps: {
+            "readable-stream": "^4.0.0",
+            split2: "^4.0.0"
+          }
+        },
+        "2.0.0": {
+          color: 38,
+          deps: {
+            split2: "^4.0.0"
+          }
+        }
+      }
+    },
+    "pino-pretty": {
+      resolve: {
+        "^11.0.0": "11.3.0",
+        "^13.0.0": "13.0.0"
+      },
+      versions: {
+        "11.3.0": {
+          color: 9,
+          deps: {
+            "fast-copy": "^3.0.2",
+            "fast-safe-stringify": "^2.1.1",
+            "help-me": "^5.0.0",
+            "on-exit-leak-free": "^2.1.0",
+            "pino-abstract-transport": "^2.0.0",
+            "readable-stream": "^4.0.0",
+            "secure-json-parse": "^2.4.0",
+            "sonic-boom": "^4.0.1",
+            "strip-json-comments": "^3.1.1",
+            colorette: "^2.0.7",
+            dateformat: "^4.6.3",
+            joycon: "^3.1.1",
+            minimist: "^1.2.6",
+            pump: "^3.0.0"
+          }
+        },
+        "13.0.0": {
+          color: 14,
+          deps: {
+            "fast-copy": "^3.0.2",
+            "fast-safe-stringify": "^2.1.1",
+            "help-me": "^5.0.0",
+            "on-exit-leak-free": "^2.1.0",
+            "pino-abstract-transport": "^2.0.0",
+            "secure-json-parse": "^2.4.0",
+            "sonic-boom": "^4.0.1",
+            "strip-json-comments": "^3.1.1",
+            colorette: "^2.0.7",
+            dateformat: "^4.6.3",
+            joycon: "^3.1.1",
+            minimist: "^1.2.6",
+            pump: "^3.0.0"
+          }
+        }
+      }
+    },
+    "pino-std-serializers": {
+      resolve: {
+        "^6.0.0": "6.2.2",
+        "^7.0.0": "7.0.0"
+      },
+      versions: {
+        "6.2.2": {
+          color: 20,
+          deps: {}
+        },
+        "7.0.0": {
+          color: 25,
+          deps: {}
+        }
+      }
+    },
+    "process-warning": {
+      resolve: {
+        "^3.0.0": "3.0.0",
+        "^4.0.0": "4.0.1"
+      },
+      versions: {
+        "3.0.0": {
+          color: 21,
+          deps: {}
+        },
+        "4.0.1": {
+          color: 26,
+          deps: {}
+        }
+      }
+    },
+    "quick-format-unescaped": {
+      resolve: {
+        "^4.0.3": "4.0.4"
+      },
+      versions: {
+        "4.0.4": {
+          color: 27,
+          deps: {}
+        }
+      }
+    },
+    "quick-lru": {
+      resolve: {
+        "^6.1.1": "6.1.2"
+      },
+      versions: {
+        "6.1.2": {
+          color: 46,
+          deps: {}
+        }
+      }
+    },
+    "readable-stream": {
+      resolve: {
+        "^4.0.0": "4.7.0"
+      },
+      versions: {
+        "4.7.0": {
+          color: 48,
+          deps: {
+            "abort-controller": "^3.0.0",
+            buffer: "^6.0.3",
+            events: "^3.3.0",
+            process: "^0.11.10",
+            string_decoder: "^1.3.0"
+          }
+        }
+      }
+    },
+    "real-require": {
+      resolve: {
+        "^0.2.0": "0.2.0"
+      },
+      versions: {
+        "0.2.0": {
+          color: 49,
+          deps: {}
+        }
+      }
+    },
+    "safe-buffer": {
+      resolve: {
+        "~5.2.0": "5.2.1"
+      },
+      versions: {
+        "5.2.1": {
+          color: 62,
+          deps: {}
+        }
+      }
+    },
+    "safe-stable-stringify": {
+      resolve: {
+        "^2.3.1": "2.5.0"
+      },
+      versions: {
+        "2.5.0": {
+          color: 28,
+          deps: {}
+        }
+      }
+    },
+    "secure-json-parse": {
+      resolve: {
+        "^2.4.0": "2.7.0"
+      },
+      versions: {
+        "2.7.0": {
+          color: 40,
+          deps: {}
+        }
+      }
+    },
+    "sonic-boom": {
+      resolve: {
+        "^3.7.0": "3.8.1",
+        "^4.0.1": "4.2.0"
+      },
+      versions: {
+        "3.8.1": {
+          color: 22,
+          deps: {
+            "atomic-sleep": "^1.0.0"
+          }
+        },
+        "4.2.0": {
+          color: 41,
+          deps: {
+            "atomic-sleep": "^1.0.0"
+          }
+        }
+      }
+    },
+    "strip-json-comments": {
+      resolve: {
+        "^3.1.1": "3.1.1"
+      },
+      versions: {
+        "3.1.1": {
+          color: 42,
+          deps: {}
+        }
+      }
+    },
+    "thread-stream": {
+      resolve: {
+        "^2.6.0": "2.7.0",
+        "^3.0.0": "3.1.0"
+      },
+      versions: {
+        "2.7.0": {
+          color: 23,
+          deps: {
+            "real-require": "^0.2.0"
+          }
+        },
+        "3.1.0": {
+          color: 29,
+          deps: {
+            "real-require": "^0.2.0"
+          }
+        }
+      }
+    },
+    "type-fest": {
+      resolve: {
+        "^4.3.2": "4.40.0"
+      },
+      versions: {
+        "4.40.0": {
+          color: 47,
+          deps: {}
+        }
+      }
+    },
+    "utf-8-validate": {
+      resolve: {
+        ">=5.0.2": "6.0.5"
+      },
+      versions: {
+        "6.0.5": {
+          color: 0,
+          deps: {
+            "node-gyp-build": "^4.3.0"
+          }
+        }
+      }
+    },
+    buffer: {
+      resolve: {
+        "^6.0.3": "6.0.3"
+      },
+      versions: {
+        "6.0.3": {
+          color: 54,
+          deps: {
+            "base64-js": "^1.3.1",
+            ieee754: "^1.2.1"
+          }
+        }
+      }
+    },
+    bufferutil: {
+      resolve: {
+        "^4.0.1": "4.0.9"
+      },
+      versions: {
+        "4.0.9": {
+          color: 1,
+          deps: {
+            "node-gyp-build": "^4.3.0"
+          }
+        }
+      }
+    },
+    camelcase: {
+      resolve: {
+        "^8.0.0": "8.0.0"
+      },
+      versions: {
+        "8.0.0": {
+          color: 44,
+          deps: {}
+        }
+      }
+    },
+    colorette: {
+      resolve: {
+        "^2.0.7": "2.0.20"
+      },
+      versions: {
+        "2.0.20": {
+          color: 30,
+          deps: {}
+        }
+      }
+    },
+    commander: {
+      resolve: {
+        "^12.0.0": "12.1.0"
+      },
+      versions: {
+        "12.1.0": {
+          color: 6,
+          deps: {}
+        }
+      }
+    },
+    dateformat: {
+      resolve: {
+        "^4.6.3": "4.6.3"
+      },
+      versions: {
+        "4.6.3": {
+          color: 31,
+          deps: {}
+        }
+      }
+    },
+    events: {
+      resolve: {
+        "^3.3.0": "3.3.0"
+      },
+      versions: {
+        "3.3.0": {
+          color: 55,
+          deps: {}
+        }
+      }
+    },
+    ieee754: {
+      resolve: {
+        "^1.2.1": "1.2.1"
+      },
+      versions: {
+        "1.2.1": {
+          color: 61,
+          deps: {}
+        }
+      }
+    },
+    jose: {
+      resolve: {
+        "^5.1.2": "5.10.0"
+      },
+      versions: {
+        "5.10.0": {
+          color: 18,
+          deps: {}
+        }
+      }
+    },
+    joycon: {
+      resolve: {
+        "^3.1.1": "3.1.1"
+      },
+      versions: {
+        "3.1.1": {
+          color: 35,
+          deps: {}
+        }
+      }
+    },
+    minimist: {
+      resolve: {
+        "^1.2.6": "1.2.8"
+      },
+      versions: {
+        "1.2.8": {
+          color: 36,
+          deps: {}
+        }
+      }
+    },
+    once: {
+      resolve: {
+        "^1.3.1": "1.4.0",
+        "^1.4.0": "1.4.0"
+      },
+      versions: {
+        "1.4.0": {
+          color: 58,
+          deps: {
+            wrappy: "1"
+          }
+        }
+      }
+    },
+    pino: {
+      resolve: {
+        "^8.19.0": "8.21.0",
+        "^9.0.0": "9.6.0"
+      },
+      versions: {
+        "8.21.0": {
+          color: 8,
+          deps: {
+            "atomic-sleep": "^1.0.0",
+            "fast-redact": "^3.1.1",
+            "on-exit-leak-free": "^2.1.0",
+            "pino-abstract-transport": "^1.2.0",
+            "pino-std-serializers": "^6.0.0",
+            "process-warning": "^3.0.0",
+            "quick-format-unescaped": "^4.0.3",
+            "real-require": "^0.2.0",
+            "safe-stable-stringify": "^2.3.1",
+            "sonic-boom": "^3.7.0",
+            "thread-stream": "^2.6.0"
+          }
+        },
+        "9.6.0": {
+          color: 13,
+          deps: {
+            "atomic-sleep": "^1.0.0",
+            "fast-redact": "^3.1.1",
+            "on-exit-leak-free": "^2.1.0",
+            "pino-abstract-transport": "^2.0.0",
+            "pino-std-serializers": "^7.0.0",
+            "process-warning": "^4.0.0",
+            "quick-format-unescaped": "^4.0.3",
+            "real-require": "^0.2.0",
+            "safe-stable-stringify": "^2.3.1",
+            "sonic-boom": "^4.0.1",
+            "thread-stream": "^3.0.0"
+          }
+        }
+      }
+    },
+    process: {
+      resolve: {
+        "^0.11.10": "0.11.10"
+      },
+      versions: {
+        "0.11.10": {
+          color: 56,
+          deps: {}
+        }
+      }
+    },
+    pump: {
+      resolve: {
+        "^3.0.0": "3.0.2"
+      },
+      versions: {
+        "3.0.2": {
+          color: 39,
+          deps: {
+            "end-of-stream": "^1.1.0",
+            once: "^1.3.1"
+          }
+        }
+      }
+    },
+    split2: {
+      resolve: {
+        "^4.0.0": "4.2.0"
+      },
+      versions: {
+        "4.2.0": {
+          color: 50,
+          deps: {}
+        }
+      }
+    },
+    string_decoder: {
+      resolve: {
+        "^1.3.0": "1.3.0"
+      },
+      versions: {
+        "1.3.0": {
+          color: 57,
+          deps: {
+            "safe-buffer": "~5.2.0"
+          }
+        }
+      }
+    },
+    wrappy: {
+      resolve: {
+        "1": "1.0.2"
+      },
+      versions: {
+        "1.0.2": {
+          color: 63,
+          deps: {}
+        }
+      }
+    },
+    ws: {
+      resolve: {
+        "^8.16.0": "8.18.1"
+      },
+      versions: {
+        "8.18.1": {
+          color: 15,
+          deps: {},
+          peer: {
+            "utf-8-validate": ">=5.0.2",
+            bufferutil: "^4.0.1"
+          },
+          transitive: {
+            "utf-8-validate": Set(1) {
+              ">=5.0.2"
+            },
+            bufferutil: Set(1) {
+              "^4.0.1"
+            }
+          }
+        }
+      }
+    },
+    zod: {
+      resolve: {
+        "^3.23.8": "3.24.3"
+      },
+      versions: {
+        "3.24.3": {
+          color: 10,
+          deps: {}
+        }
+      }
+    }
+  },
+  snapshots: {
+    ".": {
+      "@livekit/agents": "0.7.3(@livekit/rtc-node@0.13.11)(bufferutil@4.0.9)(utf-8-validate@6.0.5)",
+      "@livekit/agents-plugin-elevenlabs": "0.6.2(@livekit/agents@0.7.3(@livekit/rtc-node@0.13.11)(bufferutil@4.0.9)(utf-8-validate@6.0.5))(@livekit/rtc-node@0.13.11)(bufferutil@4.0.9)(utf-8-validate@6.0.5)",
+      "@livekit/rtc-node": "0.13.11",
+      "utf-8-validate": "6.0.5",
+      bufferutil: "4.0.9"
+    },
+    "@bufbuild/protobuf@1.10.1": {},
+    "@livekit/agents-plugin-elevenlabs@0.6.2(@livekit/agents@0.7.3(@livekit/rtc-node@0.13.11)(bufferutil@4.0.9)(utf-8-validate@6.0.5))(@livekit/rtc-node@0.13.11)(bufferutil@4.0.9)(utf-8-validate@6.0.5)": {
+      ws: "8.18.1(bufferutil@4.0.9)(utf-8-validate@6.0.5)"
+    },
+    "@livekit/agents@0.7.3(@livekit/rtc-node@0.13.11)(bufferutil@4.0.9)(utf-8-validate@6.0.5)": {
+      "@livekit/mutex": "1.1.1",
+      "@livekit/protocol": "1.37.0",
+      "@livekit/typed-emitter": "3.0.0",
+      "livekit-server-sdk": "2.12.0",
+      "pino-pretty": "11.3.0",
+      commander: "12.1.0",
+      pino: "8.21.0",
+      ws: "8.18.1(bufferutil@4.0.9)(utf-8-validate@6.0.5)",
+      zod: "3.24.3"
+    },
+    "@livekit/mutex@1.1.1": {},
+    "@livekit/protocol@1.37.0": {
+      "@bufbuild/protobuf": "1.10.1"
+    },
+    "@livekit/rtc-node@0.13.11": {
+      "@bufbuild/protobuf": "1.10.1",
+      "@livekit/mutex": "1.1.1",
+      "@livekit/typed-emitter": "3.0.0",
+      "pino-pretty": "13.0.0",
+      pino: "9.6.0"
+    },
+    "@livekit/typed-emitter@3.0.0": {},
+    "abort-controller@3.0.0": {
+      "event-target-shim": "5.0.1"
+    },
+    "atomic-sleep@1.0.0": {},
+    "base64-js@1.5.1": {},
+    "buffer@6.0.3": {
+      "base64-js": "1.5.1",
+      ieee754: "1.2.1"
+    },
+    "bufferutil@4.0.9": {
+      "node-gyp-build": "4.8.4"
+    },
+    "camelcase-keys@9.1.3": {
+      "map-obj": "5.0.0",
+      "quick-lru": "6.1.2",
+      "type-fest": "4.40.0",
+      camelcase: "8.0.0"
+    },
+    "camelcase@8.0.0": {},
+    "colorette@2.0.20": {},
+    "commander@12.1.0": {},
+    "dateformat@4.6.3": {},
+    "end-of-stream@1.4.4": {
+      once: "1.4.0"
+    },
+    "event-target-shim@5.0.1": {},
+    "events@3.3.0": {},
+    "fast-copy@3.0.2": {},
+    "fast-redact@3.5.0": {},
+    "fast-safe-stringify@2.1.1": {},
+    "help-me@5.0.0": {},
+    "ieee754@1.2.1": {},
+    "jose@5.10.0": {},
+    "joycon@3.1.1": {},
+    "livekit-server-sdk@2.12.0": {
+      "@bufbuild/protobuf": "1.10.1",
+      "@livekit/protocol": "1.37.0",
+      "camelcase-keys": "9.1.3",
+      jose: "5.10.0"
+    },
+    "map-obj@5.0.0": {},
+    "minimist@1.2.8": {},
+    "node-gyp-build@4.8.4": {},
+    "on-exit-leak-free@2.1.2": {},
+    "once@1.4.0": {
+      wrappy: "1.0.2"
+    },
+    "pino-abstract-transport@1.2.0": {
+      "readable-stream": "4.7.0",
+      split2: "4.2.0"
+    },
+    "pino-abstract-transport@2.0.0": {
+      split2: "4.2.0"
+    },
+    "pino-pretty@11.3.0": {
+      "fast-copy": "3.0.2",
+      "fast-safe-stringify": "2.1.1",
+      "help-me": "5.0.0",
+      "on-exit-leak-free": "2.1.2",
+      "pino-abstract-transport": "2.0.0",
+      "readable-stream": "4.7.0",
+      "secure-json-parse": "2.7.0",
+      "sonic-boom": "4.2.0",
+      "strip-json-comments": "3.1.1",
+      colorette: "2.0.20",
+      dateformat: "4.6.3",
+      joycon: "3.1.1",
+      minimist: "1.2.8",
+      pump: "3.0.2"
+    },
+    "pino-pretty@13.0.0": {
+      "fast-copy": "3.0.2",
+      "fast-safe-stringify": "2.1.1",
+      "help-me": "5.0.0",
+      "on-exit-leak-free": "2.1.2",
+      "pino-abstract-transport": "2.0.0",
+      "secure-json-parse": "2.7.0",
+      "sonic-boom": "4.2.0",
+      "strip-json-comments": "3.1.1",
+      colorette: "2.0.20",
+      dateformat: "4.6.3",
+      joycon: "3.1.1",
+      minimist: "1.2.8",
+      pump: "3.0.2"
+    },
+    "pino-std-serializers@6.2.2": {},
+    "pino-std-serializers@7.0.0": {},
+    "pino@8.21.0": {
+      "atomic-sleep": "1.0.0",
+      "fast-redact": "3.5.0",
+      "on-exit-leak-free": "2.1.2",
+      "pino-abstract-transport": "1.2.0",
+      "pino-std-serializers": "6.2.2",
+      "process-warning": "3.0.0",
+      "quick-format-unescaped": "4.0.4",
+      "real-require": "0.2.0",
+      "safe-stable-stringify": "2.5.0",
+      "sonic-boom": "3.8.1",
+      "thread-stream": "2.7.0"
+    },
+    "pino@9.6.0": {
+      "atomic-sleep": "1.0.0",
+      "fast-redact": "3.5.0",
+      "on-exit-leak-free": "2.1.2",
+      "pino-abstract-transport": "2.0.0",
+      "pino-std-serializers": "7.0.0",
+      "process-warning": "4.0.1",
+      "quick-format-unescaped": "4.0.4",
+      "real-require": "0.2.0",
+      "safe-stable-stringify": "2.5.0",
+      "sonic-boom": "4.2.0",
+      "thread-stream": "3.1.0"
+    },
+    "process-warning@3.0.0": {},
+    "process-warning@4.0.1": {},
+    "process@0.11.10": {},
+    "pump@3.0.2": {
+      "end-of-stream": "1.4.4",
+      once: "1.4.0"
+    },
+    "quick-format-unescaped@4.0.4": {},
+    "quick-lru@6.1.2": {},
+    "readable-stream@4.7.0": {
+      "abort-controller": "3.0.0",
+      buffer: "6.0.3",
+      events: "3.3.0",
+      process: "0.11.10",
+      string_decoder: "1.3.0"
+    },
+    "real-require@0.2.0": {},
+    "safe-buffer@5.2.1": {},
+    "safe-stable-stringify@2.5.0": {},
+    "secure-json-parse@2.7.0": {},
+    "sonic-boom@3.8.1": {
+      "atomic-sleep": "1.0.0"
+    },
+    "sonic-boom@4.2.0": {
+      "atomic-sleep": "1.0.0"
+    },
+    "split2@4.2.0": {},
+    "string_decoder@1.3.0": {
+      "safe-buffer": "5.2.1"
+    },
+    "strip-json-comments@3.1.1": {},
+    "thread-stream@2.7.0": {
+      "real-require": "0.2.0"
+    },
+    "thread-stream@3.1.0": {
+      "real-require": "0.2.0"
+    },
+    "type-fest@4.40.0": {},
+    "utf-8-validate@6.0.5": {
+      "node-gyp-build": "4.8.4"
+    },
+    "wrappy@1.0.2": {},
+    "ws@8.18.1(bufferutil@4.0.9)(utf-8-validate@6.0.5)": {},
+    "zod@3.24.3": {}
+  },
+  staging: {}
+}

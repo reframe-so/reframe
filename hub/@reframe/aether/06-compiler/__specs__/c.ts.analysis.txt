@@ -1,0 +1,36 @@
+{
+  dynamicImports: [],
+  symbols: [
+    [ "foo1", { kind: "local", block: 0 } ],
+    [ "foo2", { kind: "local", block: 1 } ],
+    [ "foo3", { kind: "local", block: 2 } ],
+    [ "foo4", { kind: "local", block: 3 } ],
+    [ "foo5", { kind: "local", block: 4 } ],
+    [ "foo6", { kind: "local", block: 5 } ],
+    [ "foo7", { kind: "local", block: 6 } ],
+    [ "foo8", { kind: "local", block: 7 } ],
+    [ "foo9", { kind: "local", block: 8 } ],
+    [ "foo10", { kind: "local", block: 9 } ]
+  ],
+  exports: [
+    [ "foo1", { kind: "local", symbol: "foo1" } ],
+    [ "foo2", { kind: "local", symbol: "foo2" } ],
+    [ "foo7", { kind: "local", symbol: "foo7" } ],
+    [ "foo8", { kind: "local", symbol: "foo8" } ],
+    [ "foo9", { kind: "local", symbol: "foo9" } ],
+    [ "foo10", { kind: "local", symbol: "foo10" } ]
+  ],
+  reexports: [],
+  blocks: [
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" }
+  ]
+}

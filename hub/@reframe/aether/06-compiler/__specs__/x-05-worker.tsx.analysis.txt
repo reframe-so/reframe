@@ -1,0 +1,30 @@
+{
+  dynamicImports: [],
+  symbols: [
+    [
+      "_jsx",
+      {
+        kind: "import",
+        name: "jsx",
+        specifier: "npm:react/jsx-runtime",
+        attributes: {}
+      }
+    ],
+    [ "test1", { kind: "local", block: 0 } ],
+    [ "test2", { kind: "local", block: 1 } ],
+    [ "test3", { kind: "local", block: 2 } ],
+    [ "Foo", { kind: "local", block: 3 } ]
+  ],
+  exports: [ [ "default", { kind: "local", symbol: "Foo" } ] ],
+  reexports: [],
+  blocks: [
+    { uses: [], dynamic: [], target: "worker:test1" },
+    { uses: [], dynamic: [], target: "worker:test2" },
+    { uses: [], dynamic: [], target: "server" },
+    {
+      uses: [ "_jsx", "test1", "test2", "test3" ],
+      dynamic: [],
+      target: "client"
+    }
+  ]
+}

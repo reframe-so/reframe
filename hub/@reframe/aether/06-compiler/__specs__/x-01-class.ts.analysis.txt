@@ -1,0 +1,21 @@
+{
+  dynamicImports: [],
+  symbols: [
+    [ "Foo", { kind: "local", block: 0 } ],
+    [ "Qux", { kind: "local", block: 0 } ],
+    [ "Bar", { kind: "local", block: 1 } ],
+    [ "Foo1", { kind: "local", block: 2 } ]
+  ],
+  exports: [
+    [ "Bar", { kind: "local", symbol: "Bar" } ],
+    [ "Qux1", { kind: "local", symbol: "Qux" } ],
+    [ "default", { kind: "local", symbol: "Foo" } ],
+    [ "Foo", { kind: "local", symbol: "Foo" } ]
+  ],
+  reexports: [],
+  blocks: [
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" }
+  ]
+}

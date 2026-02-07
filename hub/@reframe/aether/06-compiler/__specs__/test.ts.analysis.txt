@@ -1,0 +1,41 @@
+{
+  dynamicImports: [],
+  symbols: [
+    [
+      "C",
+      {
+        kind: "import",
+        name: "C",
+        specifier: "./b.ts",
+        attributes: {}
+      }
+    ],
+    [
+      "F",
+      {
+        kind: "import",
+        name: "F",
+        specifier: "./b.ts",
+        attributes: {}
+      }
+    ],
+    [ "t", { kind: "local", block: 0 } ],
+    [ "x", { kind: "local", block: 1 } ],
+    [ "foo", { kind: "local", block: 3 } ],
+    [ "bar", { kind: "local", block: 4 } ]
+  ],
+  exports: [
+    [ "t", { kind: "local", symbol: "t" } ],
+    [ "foo", { kind: "local", symbol: "foo" } ],
+    [ "bar", { kind: "local", symbol: "bar" } ],
+    [ "x", { kind: "local", symbol: "x" } ]
+  ],
+  reexports: [],
+  blocks: [
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [ "foo", "bar" ], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [ "F", "t" ], dynamic: [], target: "client" },
+    { uses: [ "C" ], dynamic: [], target: "server" }
+  ]
+}

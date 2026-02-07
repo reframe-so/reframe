@@ -1,0 +1,30 @@
+{
+  dynamicImports: [],
+  symbols: [
+    [ "Foo", { kind: "local", block: 0 } ],
+    [ "Foo1", { kind: "local", block: 0 } ],
+    [ "Bar1", { kind: "local", block: 1 } ],
+    [ "Baz1", { kind: "local", block: 2 } ],
+    [ "Bar", { kind: "local", block: 3 } ],
+    [ "Baz", { kind: "local", block: 4 } ]
+  ],
+  exports: [
+    [ "Foo2", { kind: "local", symbol: "Foo" } ],
+    [ "Bar2", { kind: "local", symbol: "Bar" } ],
+    [ "Baz2", { kind: "local", symbol: "Baz" } ],
+    [ "Foo", { kind: "local", symbol: "Foo" } ],
+    [ "Foo1", { kind: "local", symbol: "Foo1" } ],
+    [ "Bar", { kind: "local", symbol: "Bar" } ],
+    [ "Bar1", { kind: "local", symbol: "Bar1" } ],
+    [ "Baz", { kind: "local", symbol: "Baz" } ],
+    [ "Baz1", { kind: "local", symbol: "Baz1" } ]
+  ],
+  reexports: [],
+  blocks: [
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [ "Bar" ], dynamic: [], target: "server" },
+    { uses: [ "Baz" ], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "client" }
+  ]
+}

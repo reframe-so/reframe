@@ -1,0 +1,513 @@
+{
+  dependencies: {
+    "@opentelemetry/api": {
+      specifier: "^1.1.0",
+      version: "1.9.0"
+    },
+    "@playwright/test": {
+      specifier: "^1.41.2",
+      version: "1.52.0"
+    },
+    "babel-plugin-react-compiler": {
+      specifier: "*",
+      version: "19.1.0-rc.1"
+    },
+    "react-dom": {
+      specifier: "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0",
+      version: "19.1.0"
+    },
+    next: {
+      specifier: "latest",
+      version: "15.3.1"
+    },
+    react: {
+      specifier: "canary",
+      version: "19.2.0-canary-72135096-20250421"
+    },
+    sass: {
+      specifier: "^1.3.0",
+      version: "1.87.0"
+    }
+  },
+  packages: {
+    "@babel/helper-string-parser": {
+      resolve: {
+        "^7.25.9": "7.25.9"
+      },
+      versions: {
+        "7.25.9": {
+          color: 20,
+          deps: {}
+        }
+      }
+    },
+    "@babel/helper-validator-identifier": {
+      resolve: {
+        "^7.25.9": "7.25.9"
+      },
+      versions: {
+        "7.25.9": {
+          color: 21,
+          deps: {}
+        }
+      }
+    },
+    "@babel/types": {
+      resolve: {
+        "^7.26.0": "7.27.0"
+      },
+      versions: {
+        "7.27.0": {
+          color: 10,
+          deps: {
+            "@babel/helper-string-parser": "^7.25.9",
+            "@babel/helper-validator-identifier": "^7.25.9"
+          }
+        }
+      }
+    },
+    "@next/env": {
+      resolve: {
+        "15.3.1": "15.3.1"
+      },
+      versions: {
+        "15.3.1": {
+          color: 12,
+          deps: {}
+        }
+      }
+    },
+    "@opentelemetry/api": {
+      resolve: {
+        "^1.1.0": "1.9.0"
+      },
+      versions: {
+        "1.9.0": {
+          color: 4,
+          deps: {}
+        }
+      }
+    },
+    "@playwright/test": {
+      resolve: {
+        "^1.41.2": "1.52.0"
+      },
+      versions: {
+        "1.52.0": {
+          color: 3,
+          deps: {
+            playwright: "1.52.0"
+          }
+        }
+      }
+    },
+    "@swc/counter": {
+      resolve: {
+        "0.1.3": "0.1.3"
+      },
+      versions: {
+        "0.1.3": {
+          color: 13,
+          deps: {}
+        }
+      }
+    },
+    "@swc/helpers": {
+      resolve: {
+        "0.5.15": "0.5.15"
+      },
+      versions: {
+        "0.5.15": {
+          color: 14,
+          deps: {
+            tslib: "^2.8.0"
+          }
+        }
+      }
+    },
+    "babel-plugin-react-compiler": {
+      resolve: {
+        "*": "19.1.0-rc.1"
+      },
+      versions: {
+        "19.1.0-rc.1": {
+          color: 2,
+          deps: {
+            "@babel/types": "^7.26.0"
+          }
+        }
+      }
+    },
+    "caniuse-lite": {
+      resolve: {
+        "^1.0.30001579": "1.0.30001715"
+      },
+      versions: {
+        "1.0.30001715": {
+          color: 16,
+          deps: {}
+        }
+      }
+    },
+    "client-only": {
+      resolve: {
+        "0.0.1": "0.0.1"
+      },
+      versions: {
+        "0.0.1": {
+          color: 28,
+          deps: {}
+        }
+      }
+    },
+    "playwright-core": {
+      resolve: {
+        "1.52.0": "1.52.0"
+      },
+      versions: {
+        "1.52.0": {
+          color: 22,
+          deps: {}
+        }
+      }
+    },
+    "react-dom": {
+      resolve: {
+        "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0": "19.1.0"
+      },
+      versions: {
+        "19.1.0": {
+          color: 1,
+          deps: {
+            scheduler: "^0.26.0"
+          },
+          peer: {
+            react: "^19.1.0"
+          },
+          transitive: {
+            react: Set(1) {
+              "^19.1.0"
+            }
+          }
+        }
+      }
+    },
+    "source-map-js": {
+      resolve: {
+        ">=0.6.2 <2.0.0": "1.2.1",
+        "^1.0.2": "1.2.1"
+      },
+      versions: {
+        "1.2.1": {
+          color: 27,
+          deps: {}
+        }
+      }
+    },
+    "styled-jsx": {
+      resolve: {
+        "5.1.6": "5.1.6"
+      },
+      versions: {
+        "5.1.6": {
+          color: 18,
+          deps: {
+            "client-only": "0.0.1"
+          },
+          peer: {
+            react: ">= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0"
+          },
+          transitive: {
+            react: Set(1) {
+              ">= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0"
+            }
+          }
+        }
+      }
+    },
+    busboy: {
+      resolve: {
+        "1.6.0": "1.6.0"
+      },
+      versions: {
+        "1.6.0": {
+          color: 15,
+          deps: {
+            streamsearch: "^1.1.0"
+          }
+        }
+      }
+    },
+    chokidar: {
+      resolve: {
+        "^4.0.0": "4.0.3"
+      },
+      versions: {
+        "4.0.3": {
+          color: 7,
+          deps: {
+            readdirp: "^4.0.1"
+          }
+        }
+      }
+    },
+    immutable: {
+      resolve: {
+        "^5.0.2": "5.1.1"
+      },
+      versions: {
+        "5.1.1": {
+          color: 8,
+          deps: {}
+        }
+      }
+    },
+    nanoid: {
+      resolve: {
+        "^3.3.6": "3.3.11"
+      },
+      versions: {
+        "3.3.11": {
+          color: 25,
+          deps: {}
+        }
+      }
+    },
+    next: {
+      resolve: {
+        latest: "15.3.1"
+      },
+      versions: {
+        "15.3.1": {
+          color: 5,
+          deps: {
+            "@next/env": "15.3.1",
+            "@swc/counter": "0.1.3",
+            "@swc/helpers": "0.5.15",
+            "caniuse-lite": "^1.0.30001579",
+            "styled-jsx": "5.1.6",
+            busboy: "1.6.0",
+            postcss: "8.4.31"
+          },
+          peer: {
+            "@opentelemetry/api": "^1.1.0",
+            "@playwright/test": "^1.41.2",
+            "babel-plugin-react-compiler": "*",
+            "react-dom": "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0",
+            react: "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0",
+            sass: "^1.3.0"
+          },
+          transitive: {
+            "@opentelemetry/api": Set(1) {
+              "^1.1.0"
+            },
+            "@playwright/test": Set(1) {
+              "^1.41.2"
+            },
+            "babel-plugin-react-compiler": Set(1) {
+              "*"
+            },
+            "react-dom": Set(1) {
+              "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0"
+            },
+            react: Set(2) {
+              ">= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0",
+              "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0"
+            },
+            sass: Set(1) {
+              "^1.3.0"
+            }
+          }
+        }
+      }
+    },
+    picocolors: {
+      resolve: {
+        "^1.0.0": "1.1.1"
+      },
+      versions: {
+        "1.1.1": {
+          color: 26,
+          deps: {}
+        }
+      }
+    },
+    playwright: {
+      resolve: {
+        "1.52.0": "1.52.0"
+      },
+      versions: {
+        "1.52.0": {
+          color: 11,
+          deps: {
+            "playwright-core": "1.52.0"
+          }
+        }
+      }
+    },
+    postcss: {
+      resolve: {
+        "8.4.31": "8.4.31"
+      },
+      versions: {
+        "8.4.31": {
+          color: 17,
+          deps: {
+            "source-map-js": "^1.0.2",
+            nanoid: "^3.3.6",
+            picocolors: "^1.0.0"
+          }
+        }
+      }
+    },
+    react: {
+      resolve: {
+        ">= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0": "19.2.0-canary-72135096-20250421",
+        "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0": "19.2.0-canary-72135096-20250421",
+        "^19.1.0": "19.2.0-canary-72135096-20250421",
+        canary: "19.2.0-canary-72135096-20250421"
+      },
+      versions: {
+        "19.2.0-canary-72135096-20250421": {
+          color: 6,
+          deps: {}
+        }
+      }
+    },
+    readdirp: {
+      resolve: {
+        "^4.0.1": "4.1.2"
+      },
+      versions: {
+        "4.1.2": {
+          color: 19,
+          deps: {}
+        }
+      }
+    },
+    sass: {
+      resolve: {
+        "^1.3.0": "1.87.0"
+      },
+      versions: {
+        "1.87.0": {
+          color: 0,
+          deps: {
+            "source-map-js": ">=0.6.2 <2.0.0",
+            chokidar: "^4.0.0",
+            immutable: "^5.0.2"
+          }
+        }
+      }
+    },
+    scheduler: {
+      resolve: {
+        "^0.26.0": "0.26.0"
+      },
+      versions: {
+        "0.26.0": {
+          color: 9,
+          deps: {}
+        }
+      }
+    },
+    streamsearch: {
+      resolve: {
+        "^1.1.0": "1.1.0"
+      },
+      versions: {
+        "1.1.0": {
+          color: 24,
+          deps: {}
+        }
+      }
+    },
+    tslib: {
+      resolve: {
+        "^2.8.0": "2.8.1"
+      },
+      versions: {
+        "2.8.1": {
+          color: 23,
+          deps: {}
+        }
+      }
+    }
+  },
+  snapshots: {
+    ".": {
+      "@opentelemetry/api": "1.9.0",
+      "@playwright/test": "1.52.0",
+      "babel-plugin-react-compiler": "19.1.0-rc.1",
+      "react-dom": "19.1.0(react@19.2.0-canary-72135096-20250421)",
+      next: "15.3.1(@opentelemetry/api@1.9.0)(@playwright/test@1.52.0)(babel-plugin-react-compiler@19.1.0-rc.1)(react-dom@19.1.0(react@19.2.0-canary-72135096-20250421))(react@19.2.0-canary-72135096-20250421)(sass@1.87.0)",
+      react: "19.2.0-canary-72135096-20250421",
+      sass: "1.87.0"
+    },
+    "@babel/helper-string-parser@7.25.9": {},
+    "@babel/helper-validator-identifier@7.25.9": {},
+    "@babel/types@7.27.0": {
+      "@babel/helper-string-parser": "7.25.9",
+      "@babel/helper-validator-identifier": "7.25.9"
+    },
+    "@next/env@15.3.1": {},
+    "@opentelemetry/api@1.9.0": {},
+    "@playwright/test@1.52.0": {
+      playwright: "1.52.0"
+    },
+    "@swc/counter@0.1.3": {},
+    "@swc/helpers@0.5.15": {
+      tslib: "2.8.1"
+    },
+    "babel-plugin-react-compiler@19.1.0-rc.1": {
+      "@babel/types": "7.27.0"
+    },
+    "busboy@1.6.0": {
+      streamsearch: "1.1.0"
+    },
+    "caniuse-lite@1.0.30001715": {},
+    "chokidar@4.0.3": {
+      readdirp: "4.1.2"
+    },
+    "client-only@0.0.1": {},
+    "immutable@5.1.1": {},
+    "nanoid@3.3.11": {},
+    "next@15.3.1(@opentelemetry/api@1.9.0)(@playwright/test@1.52.0)(babel-plugin-react-compiler@19.1.0-rc.1)(react-dom@19.1.0(react@19.2.0-canary-72135096-20250421))(react@19.2.0-canary-72135096-20250421)(sass@1.87.0)": {
+      "@next/env": "15.3.1",
+      "@swc/counter": "0.1.3",
+      "@swc/helpers": "0.5.15",
+      "caniuse-lite": "1.0.30001715",
+      "styled-jsx": "5.1.6(react@19.2.0-canary-72135096-20250421)",
+      busboy: "1.6.0",
+      postcss: "8.4.31"
+    },
+    "picocolors@1.1.1": {},
+    "playwright-core@1.52.0": {},
+    "playwright@1.52.0": {
+      "playwright-core": "1.52.0"
+    },
+    "postcss@8.4.31": {
+      "source-map-js": "1.2.1",
+      nanoid: "3.3.11",
+      picocolors: "1.1.1"
+    },
+    "react-dom@19.1.0(react@19.2.0-canary-72135096-20250421)": {
+      scheduler: "0.26.0"
+    },
+    "react@19.2.0-canary-72135096-20250421": {},
+    "readdirp@4.1.2": {},
+    "sass@1.87.0": {
+      "source-map-js": "1.2.1",
+      chokidar: "4.0.3",
+      immutable: "5.1.1"
+    },
+    "scheduler@0.26.0": {},
+    "source-map-js@1.2.1": {},
+    "streamsearch@1.1.0": {},
+    "styled-jsx@5.1.6(react@19.2.0-canary-72135096-20250421)": {
+      "client-only": "0.0.1"
+    },
+    "tslib@2.8.1": {}
+  },
+  staging: {}
+}

@@ -1,0 +1,47 @@
+{
+  "imports": {
+    "/": "./hub/",
+    "./": "./",
+    "@reframe/": "./hub/@reframe/",
+    "@bootstrap/": "./hub/@bootstrap/"
+  },
+  "exclude": [
+    "hub/@reframe/aether/06-compiler/__specs__/**"
+  ],
+  "nodeModulesDir": "none",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:react@canary",
+    "jsxImportSourceTypes": "npm:@types/react@^19.x",
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "deno.ns",
+      "deno.unstable"
+    ]
+  },
+  "unstable": [
+    "cron",
+    "kv",
+    "broadcast-channel"
+  ],
+  "tasks": {
+    "cli": "deno run -A hub/@reframe/cli/main.ts",
+    "cli:serve": "deno run --watch -A hub/@reframe/cli/main.ts serve",
+    "dev": "deno run -A hub/@reframe/cli/dev.ts",
+    "run": "deno run --no-check -IE -S=\"cpus,osRelease\" -R -W -N --allow-run --no-prompt --watch",
+    "inspect": "deno task run --inspect",
+    "serve": "deno task run -- hub/@reframe/aether/xx-stage/serve.ts",
+    "cache": "deno cache hub/@reframe/aether/xx-stage/serve.ts",
+    "serve:ssl": "SSL=true deno task serve",
+    "serve:prod": "SSL=true RUNTIME_SERVER_URL=\"https://reframe.so/~\" deno task hypervisor",
+    "aether": "deno task run -- hub/@reframe/aether/xx-stage/aether.ts",
+    "hypervisor": "deno task run -- hub/@reframe/aether/xx-stage/hypervisor.ts",
+    "test": "deno test --watch -A --reporter=pretty --fail-fast=1",
+    "cursor": "cursor --extensionDevelopmentPath=$(pwd)/hub/@reframe/vscode/ hub/@reframe/vscode",
+    "vscode": "code --extensionDevelopmentPath=$(pwd)/hub/@reframe/vscode/ hub/@reframe/vscode",
+    "db:checkpoint": "litecli truth.db -e 'PRAGMA wal_checkpoint(TRUNCATE); VACUUM'",
+    "db:clean": "rm -f truth.db-*; git checkout truth.db"
+  }
+}

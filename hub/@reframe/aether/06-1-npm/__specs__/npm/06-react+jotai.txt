@@ -1,0 +1,54 @@
+{
+  dependencies: {
+    jotai: {
+      specifier: "latest",
+      version: "2.12.3"
+    },
+    react: {
+      specifier: "canary",
+      version: "19.2.0-canary-72135096-20250421"
+    }
+  },
+  packages: {
+    jotai: {
+      resolve: {
+        latest: "2.12.3"
+      },
+      versions: {
+        "2.12.3": {
+          color: 0,
+          deps: {},
+          peer: {
+            react: ">=17.0.0"
+          },
+          transitive: {
+            react: Set(1) {
+              ">=17.0.0"
+            }
+          }
+        }
+      }
+    },
+    react: {
+      resolve: {
+        ">=17.0.0": "19.2.0-canary-72135096-20250421",
+        canary: "19.2.0-canary-72135096-20250421"
+      },
+      versions: {
+        "19.2.0-canary-72135096-20250421": {
+          color: 1,
+          deps: {}
+        }
+      }
+    }
+  },
+  snapshots: {
+    ".": {
+      jotai: "2.12.3(react@19.2.0-canary-72135096-20250421)",
+      react: "19.2.0-canary-72135096-20250421"
+    },
+    "jotai@2.12.3(react@19.2.0-canary-72135096-20250421)": {},
+    "react@19.2.0-canary-72135096-20250421": {}
+  },
+  staging: {}
+}

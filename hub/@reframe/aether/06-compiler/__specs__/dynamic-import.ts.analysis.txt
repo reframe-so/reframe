@@ -1,0 +1,53 @@
+{
+  dynamicImports: [
+    {
+      specifier: "/path/to/foo",
+      attributes: {},
+      symbols: "*",
+      target: null
+    },
+    {
+      specifier: "/path/to/foo",
+      attributes: { mode: "async", type: "json" },
+      symbols: "*",
+      target: null
+    },
+    {
+      specifier: "/path/to/foo",
+      attributes: {},
+      symbols: [ "bar", "foo" ],
+      target: null
+    },
+    {
+      specifier: "/path/to/foo",
+      attributes: {},
+      symbols: [],
+      target: null
+    },
+    {
+      specifier: "./path/to/foo",
+      attributes: { x: "a" },
+      symbols: [ "foo" ],
+      target: null
+    }
+  ],
+  symbols: [
+    [ "x", { kind: "local", block: 1 } ],
+    [ "foo1", { kind: "local", block: 2 } ],
+    [ "foo2", { kind: "local", block: 3 } ],
+    [ "bar", { kind: "local", block: 4 } ],
+    [ "baz", { kind: "local", block: 5 } ],
+    [ "gg", { kind: "local", block: 6 } ]
+  ],
+  exports: [],
+  reexports: [],
+  blocks: [
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [ 0 ], target: "server" },
+    { uses: [], dynamic: [ 1 ], target: "server" },
+    { uses: [], dynamic: [ 2 ], target: "server" },
+    { uses: [], dynamic: [ 3 ], target: "server" },
+    { uses: [], dynamic: [ 4 ], target: "server" }
+  ]
+}

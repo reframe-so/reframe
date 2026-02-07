@@ -1,0 +1,23 @@
+{
+  dynamicImports: [],
+  symbols: [
+    [ "a", { kind: "local", block: 0 } ],
+    [ "b", { kind: "local", block: 0 } ],
+    [ "d", { kind: "local", block: 0 } ],
+    [ "c", { kind: "local", block: 1 } ],
+    [ "g", { kind: "local", block: 0 } ],
+    [ "h", { kind: "local", block: 0 } ],
+    [ "j", { kind: "local", block: 0 } ],
+    [ "y", { kind: "local", block: 3 } ],
+    [ "x", { kind: "local", block: 3 } ],
+    [ "z", { kind: "local", block: 3 } ]
+  ],
+  exports: [ [ "d", { kind: "local", symbol: "d" } ] ],
+  reexports: [],
+  blocks: [
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" }
+  ]
+}

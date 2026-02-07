@@ -1,0 +1,7 @@
+{
+  dynamicImports: [],
+  symbols: [ [ "default", { kind: "local", block: 0 } ] ],
+  exports: [ [ "default", { kind: "local", symbol: "default" } ] ],
+  reexports: [],
+  blocks: [ { uses: [], dynamic: [], target: "server" } ]
+}

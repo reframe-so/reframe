@@ -1,0 +1,99 @@
+{
+  dynamicImports: [],
+  symbols: [
+    [
+      "_jsx",
+      {
+        kind: "import",
+        name: "jsx",
+        specifier: "npm:react/jsx-runtime",
+        attributes: {}
+      }
+    ],
+    [
+      "_jsxs",
+      {
+        kind: "import",
+        name: "jsxs",
+        specifier: "npm:react/jsx-runtime",
+        attributes: {}
+      }
+    ],
+    [
+      "Page",
+      {
+        kind: "import",
+        name: "default",
+        specifier: "./page.tsx",
+        attributes: {}
+      }
+    ],
+    [
+      "t",
+      {
+        kind: "import",
+        name: "*",
+        specifier: "./page.tsx",
+        attributes: {}
+      }
+    ],
+    [
+      "Bar",
+      {
+        kind: "import",
+        name: "Foo",
+        specifier: "./page.tsx",
+        attributes: {}
+      }
+    ],
+    [
+      "count",
+      {
+        kind: "import",
+        name: "default",
+        specifier: "./page.tsx",
+        attributes: {}
+      }
+    ],
+    [
+      "Client",
+      {
+        kind: "import",
+        name: "default",
+        specifier: "./client.tsx",
+        attributes: {}
+      }
+    ],
+    [ "txt", { kind: "local", block: 0 } ],
+    [ "mmm", { kind: "local", block: 0 } ],
+    [ "Env", { kind: "local", block: 1 } ],
+    [ "lower", { kind: "local", block: 2 } ],
+    [ "div", { kind: "local", block: 3 } ],
+    [ "App", { kind: "local", block: 4 } ],
+    [ "foo", { kind: "local", block: 5 } ],
+    [ "bar", { kind: "local", block: 6 } ]
+  ],
+  exports: [
+    [ "foo", { kind: "local", symbol: "foo" } ],
+    [ "bar", { kind: "local", symbol: "bar" } ]
+  ],
+  reexports: [],
+  blocks: [
+    { uses: [ "count", "t" ], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [], dynamic: [], target: "server" },
+    { uses: [ "_jsx" ], dynamic: [], target: "server" },
+    {
+      uses: [
+        "_jsxs",  "_jsx",
+        "Client", "Bar",
+        "t",      "Page",
+        "txt"
+      ],
+      dynamic: [],
+      target: "server"
+    },
+    { uses: [ "bar" ], dynamic: [], target: "server" },
+    { uses: [ "foo" ], dynamic: [], target: "server" }
+  ]
+}
